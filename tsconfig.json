@@ -1,17 +1,18 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "target": "es2022",
     "module": "commonjs",
     "moduleResolution": "node",
     "noUnusedParameters": true,
     "noUnusedLocals": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
+    "useDefineForClassFields": false,
     "declaration": true,
     "removeComments": true,
     "outDir": "lib_commonjs/",
     "rootDir": "src",
-    "lib": ["dom", "es5", "es2015.core", "es2015.collection", "es2015.iterable", "es2015.promise"]
+    "lib": ["dom", "dom.iterable", "es2022"]
   },
   "include": [
     "src/**/*"
@@ -20,7 +21,6 @@
   "buildOnSave": false,
   "angularCompilerOptions": {
     "decoratorsAs": "static fields",
-    "skipTemplateCodegen": true,
     "preserveWhitespaces": false
   }
 }
