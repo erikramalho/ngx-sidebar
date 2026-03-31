@@ -7,7 +7,8 @@ import { Sidebar } from './sidebar.component';
   standalone: true,
   host: {
     '(click)': '_onClick()'
-  }
+  },
+  standalone: false
 })
 export class CloseSidebar {
   constructor(private _sidebar: Sidebar) {}

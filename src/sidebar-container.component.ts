@@ -74,7 +74,8 @@ import { Sidebar } from './sidebar.component';
       transition: transform 0.3s cubic-bezier(0, 0, 0.3, 1), padding 0.3s cubic-bezier(0, 0, 0.3, 1);
     }
   `],
-  changeDetection: ChangeDetectionStrategy.OnPush
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  standalone: false
 })
 export class SidebarContainer implements AfterContentInit, OnChanges, OnDestroy {
   @Input() animate: boolean = true;

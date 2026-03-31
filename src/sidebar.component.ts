@@ -85,7 +85,8 @@ import { isLTR, isIOS } from './utils';
       transition: transform 0.3s cubic-bezier(0, 0, 0.3, 1);
     }
   `],
-  changeDetection: ChangeDetectionStrategy.OnPush
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  standalone: false
 })
 export class Sidebar implements AfterContentInit, OnInit, OnChanges, OnDestroy {
   // `openedChange` allows for "2-way" data binding
